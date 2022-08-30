@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    ===========================
+       All Meta Tag
+    ===========================
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--
+    ===========================
+       Meta Tag OG Image
+    ===========================
+    -->
+
+    <meta property="og:title" content="PORTFOLIO WEBSITE" />
+    <meta property="og:type" content="website" />
+    <!--not change this Line-->
+    <meta property="og:url" content="<?php echo current_url();?>" />
+    <!--not change this Line-->
+    <meta
+      property="og:description"
+      content="My name is Shrabon Kumar Saha. I am a junior web designer and developer"
+    />
+    <meta property="og:keywords" content="Portfolio Website, WEBSITE DESIGN" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Shrabon85/portfolio_website/master/og_image.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://raw.githubusercontent.com/Shrabon85/portfolio_website/master/og_image.jpg"
+    />
+    <link
+      rel="image_src"
+      href="https://raw.githubusercontent.com/Shrabon85/portfolio_website/master/og_image.jpg"
+    />
+
+    <!--
+    ===========================
+       Website title
+    ===========================
+    -->
+
+    <title>Shrabon - My portfolio website</title>
+
+    <!--
+    ===========================
+       Favicon icon Link
+    ===========================
+    -->
+    <link rel="shortcut icon" href="images/favicon_icon.png" />
+
+    <!--
+    ===========================
+       Bootstrap file Link
+    ===========================
+    -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!--
+    ===========================
+       css & Responsive file Link
+    ===========================
+    -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!--
+    ===========================
+       Font Awesome Link
+    ===========================
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--
+    ===========================
+       Google Font Link
+    ===========================
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+
+      <div class="left_div">
+        <h1>BRAND</h1>
+      </div>
+
+      <div class="right_div">
+        <ul class="right_div2">
+          <li><a href="">Home</a></li>
+          <li class="drop1"><a href="#" >Home</a>
+            <div class="dropdown1">
+              <ul>
+                <li><a href="">menu1</a></li>
+                <li><a href="">menu2</a></li>
+                <li class="drop2"><a href="">menu3</a>
+                  <div class="dropdown2">
+                    <ul>
+                      <li><a href="">menu4</a></li>
+                      <li><a href="">menu5</a></li>
+                      <li><a href="">menu6</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Home</a></li>
+        </ul>
+      </div>
+      <div class="toggle_menu">     
+        <i class="fa-solid fa-bars" onclick="openNav()"></i>
+
+        <div class="overlay" id="overlay">
+            <i class="fa-solid fa-xmark" onclick="closeNav()"></i>
+            <div class="overlay_content">
+              <ul class="right_div2">
+                <li><a href="#" onclick="closeNav()">Home</a></li>
+                <li class="drop1"  onclick="res_drop()"><a href="" class="dro">Home</a>
+                  <div class="dropdown1">
+                    <ul>
+                      <li><a href="">menu1</a></li>
+                      <li><a href="">menu2</a></li>
+                      <li class="drop2"><a href="" class="dro">menu3</a>
+                        <div class="dropdown2">
+                          <ul>
+                            <li><a href="">menu4</a></li>
+                            <li><a href="">menu5</a></li>
+                            <li><a href="">menu6</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      
+
+    </section>
+
+   
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--
+    ===========================
+       Main JS File
+    ===========================
+    -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

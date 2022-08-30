@@ -1,0 +1,303 @@
+/*
+    ===========================
+       important css linn start
+    ===========================
+*/
+
+
+*,::before,::after,body,h1,h2,h3,h4,h5,h6,ul,ol,a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: open-sans;
+    height: 5000px;
+
+
+}
+
+
+/*
+    ===========================
+       important css linn End
+    ===========================
+*/
+
+
+
+/* .nav_link{
+    position: relative;
+}
+.nav_links{
+    width: 80%;
+}
+h1{
+    width: 20%;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+li{
+    list-style-type:none ;
+}
+.nav_links > ul{
+    display: flex;
+}
+.nav_link > a{
+    display: block;
+    padding: 10px 15px;
+}
+.drop{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 120px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+
+
+}
+.drop a,.drop2 a{
+    background-color: green;
+    display: flex;
+    padding: 10px 10px;
+}
+.drop a:hover{
+    background-color: white;
+    color: black;
+}
+
+.drop2{
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    width: 100px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.drop3{
+    position: relative;
+    top: -40px;
+    left: 95%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.nav_link:hover>.drop,
+.nav_link:hover>.drop2,
+.sec3:hover>.drop3
+
+    {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-10px);
+}
+ */
+ /* .dropdown{
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+ }
+ h1{
+    width: 20%;
+ }
+ .nav_links{
+    width: 80%;
+    text-align: right;
+ }
+li{
+    display: inline-block;
+}
+a{
+    display: block;
+    padding: 15px;
+    color: white;
+}
+a:hover{
+    color: white;
+}
+.sec1,.sec2,.sec3{
+    position: relative;
+}
+.drop,.drop2{
+
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    text-align: left;
+    transform: translateY(10px);
+
+}
+span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.span2{
+    position: absolute;
+    background-color: yellow;
+    top: 10px;
+    left: -13px;
+    transform: rotate(267deg);
+}
+.drop a,.drop2 a,.drop3 a{
+    width: 120px;  
+    display: block;
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    position: relative;
+}
+.drop a:hover,.drop2 a:hover,.drop3 a:hover{
+    background-color: white;
+}
+.drop a:hover span{
+    background-color: white;
+}
+.drop3{
+    position: relative;
+    top: -45px;
+    left: 105%;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    transform: translateX(10px);
+}
+.sec1:hover>.drop,
+.sec2:hover>.drop2,
+.sec3:hover>.drop3{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+
+}
+.sec3:hover>.drop3{
+    transform: translateX(0px);
+
+}
+.sticky {
+    width: 100%;
+    background: #fff;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 10px 10px;
+
+}
+.sticky h1   {
+    color: #5c4e82;
+    
+}
+.sticky a {
+    color:#5c4e82;
+}
+.toggle_menu{
+    display: none;
+}
+.overlay{
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+} */
+
+.header{
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.left_div{
+    width: 30%;
+}
+.right_div{
+    width: 70%;
+    text-align: right;
+}
+.right_div2 > li{
+    padding: 10px 0px;
+}
+li{
+    display: inline-block;
+
+}
+a{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    padding: 20px;
+    display: inline-block;
+}
+.drop1{
+    position: relative;
+}
+
+.dropdown1{
+    background-color: antiquewhite;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+   border-top: 2px solid;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+.dropdown1 a{
+    width: 200px;
+}
+.dropdown1 a:hover{
+    background-color: rgba(0, 0, 0, 0.055);
+
+}
+.dropdown2{
+
+    position: absolute;
+    top: 70%;
+    left: 100%;
+   background-color: antiquewhite;
+   opacity: 0;
+   pointer-events: none;
+   border-top: 2px solid;
+   transform: translateX(10px);
+
+
+}
+.drop1:hover > .dropdown1,
+.drop2:hover > .dropdown2{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+
+}
+.drop2:hover > .dropdown2{
+    transform: translateX(0px);
+    transition: 0.3s;
+
+}
+.toggle_menu{
+    display: none;
+    transition: 0.5s;
+
+}
+.overlay{
+    width: 0%;
+    transition: 0.5s;
+}
+
